@@ -8,21 +8,7 @@ import cors from "cors";
 import Razorpay from "razorpay";
 import axios from "axios";
 
-const url = `https://ai-hiremate-backend.onrender.com`;
-const interval = 30000;
-
-function reloadWebsite() {
-  axios
-    .get(url)
-    .then((response) => {
-      console.log("website reloded");
-    })
-    .catch((error) => {
-      console.error(`Error : ${error.message}`);
-    });
-}
-
-setInterval(reloadWebsite, interval);
+const url = ` http://localhost:5173/`;
 
 
  dotenv.config();

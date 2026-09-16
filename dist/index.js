@@ -6,6 +6,7 @@ import aiRoutes from "./routes/ai.js";
 import paymentRoutes from "./routes/payment.js";
 import cors from "cors";
 import Razorpay from "razorpay";
+const url = ` http://localhost:5173/`;
 dotenv.config();
 export const instance = new Razorpay({
     key_id: process.env.Razorpay_Key,
