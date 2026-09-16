@@ -25,8 +25,6 @@ function reloadWebsite() {
 setInterval(reloadWebsite, interval);
 
 
-const url = ` http://localhost:5173/`;
-
 
  dotenv.config();
 
